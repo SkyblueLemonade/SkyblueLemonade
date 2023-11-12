@@ -1,10 +1,19 @@
-- 👋 Hi, I’m @SkyblueLemonade
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+sleepy = 0
+knowledge = 0
 
-<!---
-SkyblueLemonade/SkyblueLemonade is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+while sleepy < 100:
+  print("You are feeling sleepy. Keep staying awake to increase your knowledge!")
+  answer = input("What is 2 + 2? ")
+  if answer == "4":
+    print("Correct! Your knowledge has increased.")
+    knowledge += 1
+  else:
+    print("Incorrect. Try again.")
+  
+  sleepy += 10
+  knowledge -= 1
+  
+  print("Your current knowledge level is:", knowledge)
+  print("Your current sleepiness level is:", sleepy)
+
+print("You are too sleepy to continue. Game over!")
